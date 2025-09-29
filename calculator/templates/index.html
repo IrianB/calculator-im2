@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blood Bridge - Home</title>
+</head>
+<body>
+  <h1>Donors</h1>
+  <ul>
+    {% for donor in donors %}
+      <li>{{ donor.name }} - {{ donor.blood_type }}</li>
+    {% empty %}
+      <li>No donors yet.</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
